@@ -149,6 +149,21 @@ Vale observar que, em ambientes com luz artificial ou sombras intensas, os valor
   * **K-Means e Tons da Mesma Cor:** O K-Means pode ser *muito* específico. No teste `planta_sombra.jpg`, ele criou clusters diferentes para "verde-claro" (36.79%) e "verde-escuro" (sombra). A lógica de "cluster mais próximo" selecionou apenas o verde-claro, ignorando as sombras. Já o método HSV (60.38%) foi mais generalista e capturou ambos os tons de verde.
   * **Velocidade:** K-Means é computacionalmente mais custoso, os testes com HSV levaram \~0.06s, enquanto K-Means levou \~1.80s.
 
+
+## Solução de Problemas (Troubleshooting)
+Erro no Linux (Codespaces/Docker): ImportError: libGL.so.1: cannot open shared object file...
+
+Problema: O OpenCV (cv2) requer bibliotecas gráficas do sistema que não vêm instaladas em ambientes Linux "minimal" (sem interface gráfica).
+
+Solução: Instale a biblioteca libgl1 ausente usando o gerenciador de pacotes do seu sistema (ex: apt no Debian/Ubuntu).
+
+# Atualize a lista de pacotes
+sudo apt-get update
+
+# Instale a biblioteca gráfica
+sudo apt-get install -y libgl1
+Após a instalação, o script Python rodará normalmente.
+
 <!-- end list -->
 
 ```
