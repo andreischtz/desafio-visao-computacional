@@ -145,7 +145,7 @@ Vale observar que, em ambientes com luz artificial ou sombras intensas, os valor
 ## Limitações Conhecidas
 
   * **HSV e Saturação Baixa:** O método HSV tem dificuldade em distinguir cores com baixa saturação. No teste `ceu.jpg`, o HSV (77.15%) capturou o céu azul *e* as nuvens brancas, pois branco/cinza têm baixa saturação e podem "vazar" para dentro do range.
-  * **K-Means (Precisão vs. Generalidade):** O K-Means foi mais "inteligente" no `ceu.jpg`, criando clusters separados para o céu (40.69%) e as nuvens, resultando em uma máscara mais limpa.
+  * **K-Means:** O K-Means foi melhor no `ceu.jpg`, criando clusters separados para o céu (40.69%) e as nuvens, resultando em uma máscara mais limpa.
   * **K-Means e Tons da Mesma Cor:** O K-Means pode ser *muito* específico. No teste `planta_sombra.jpg`, ele criou clusters diferentes para "verde-claro" (36.79%) e "verde-escuro" (sombra). A lógica de "cluster mais próximo" selecionou apenas o verde-claro, ignorando as sombras. Já o método HSV (60.38%) foi mais generalista e capturou ambos os tons de verde.
   * **Velocidade:** K-Means é computacionalmente mais custoso, os testes com HSV levaram \~0.06s, enquanto K-Means levou \~1.80s.
 
