@@ -150,19 +150,23 @@ Vale observar que, em ambientes com luz artificial ou sombras intensas, os valor
   * **Velocidade:** K-Means é computacionalmente mais custoso, os testes com HSV levaram \~0.06s, enquanto K-Means levou \~1.80s.
 
 
-## Solução de Problemas (Troubleshooting)
-Erro no Linux (Codespaces/Docker): ImportError: libGL.so.1: cannot open shared object file...
+---
 
-Problema: O OpenCV (cv2) requer bibliotecas gráficas do sistema que não vêm instaladas em ambientes Linux "minimal" (sem interface gráfica).
+## ⚠️ Solução de Problemas (Troubleshooting)
 
-Solução: Instale a biblioteca libgl1 ausente usando o gerenciador de pacotes do seu sistema (ex: apt no Debian/Ubuntu).
+**Erro no Linux (Codespaces/Docker): `ImportError: libGL.so.1: cannot open shared object file...`**
 
-# Atualize a lista de pacotes
+* **Problema:** O OpenCV (`cv2`) requer bibliotecas gráficas do sistema que não vêm instaladas em ambientes Linux "minimal" (sem interface gráfica), como o GitHub Codespaces ou contêineres Docker.
+* **Solução:** Instale a biblioteca `libgl1` ausente usando o gerenciador de pacotes do seu sistema (ex: `apt` no Debian/Ubuntu).
+
+**Comandos para o terminal Linux:**
+
+```bash
+# 1. Atualize a lista de pacotes
 sudo apt-get update
-
-# Instale a biblioteca gráfica
+    
+# 2. Instale a biblioteca gráfica
 sudo apt-get install -y libgl1
-Após a instalação, o script Python rodará normalmente.
 
 <!-- end list -->
 
