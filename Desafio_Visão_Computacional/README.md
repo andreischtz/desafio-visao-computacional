@@ -22,7 +22,7 @@ A maneira mais fácil de testar este projeto é diretamente no Google Colab, que
 
 2.  Quando o notebook carregar, clique em **"Executar tudo"** no menu "Ambiente de execução".
 
-3.  Role para baixo e veja os logs de saída dos testes, neste notebook já tem dois exemplos de uso, para testar outros métodos e usar outras imagens, basta conferir o tópico abaixo Exemplos de Uso.
+3.  Role para baixo e veja os logs de saída dos testes, neste notebook já tem alguns exemplos de uso, para testar outros métodos e usar outras imagens, basta conferir o tópico abaixo Exemplos de Uso.
 
 ---
 
