@@ -149,6 +149,7 @@ Vale observar que, em ambientes com luz artificial ou sombras intensas, os valor
   * **K-Means e Tons da Mesma Cor:** O K-Means pode ser *muito* específico. No teste `planta_sombra.jpg`, ele criou clusters diferentes para "verde-claro" (36.79%) e "verde-escuro" (sombra). A lógica de "cluster mais próximo" selecionou apenas o verde-claro, ignorando as sombras. Já o método HSV (60.38%) foi mais generalista e capturou ambos os tons de verde.
   * **Velocidade:** K-Means é computacionalmente mais custoso, os testes com HSV levaram \~0.06s, enquanto K-Means levou \~1.80s.
 
+<!-- end list -->
 
 ---
 
@@ -167,8 +168,6 @@ sudo apt-get update
     
 # 2. Instale a biblioteca gráfica
 sudo apt-get install -y libgl1
-
-<!-- end list -->
 
 ```
 ```
