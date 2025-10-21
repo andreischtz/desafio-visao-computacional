@@ -18,7 +18,7 @@ A maneira mais fácil de testar este projeto é diretamente no Google Colab, que
 
 1.  **Clique no link abaixo** para abrir o notebook de teste:
 
-    [![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andreischtz/desafio-visao-computacional/blob/main/Desafio_Visão_Computacional/Testar_Projeto_Aqui.ipynb)
+    [![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andreischtz/desafio-visao-computacional/blob/main/Testar_Projeto_Aqui.ipynb)
 
 2.  Quando o notebook carregar, clique em **"Executar tudo"** no menu "Ambiente de execução".
 
