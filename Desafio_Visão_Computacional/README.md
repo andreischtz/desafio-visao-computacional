@@ -22,11 +22,11 @@ A maneira mais fácil de testar este projeto é diretamente no Google Colab, que
 
 2.  Quando o notebook carregar, clique em **"Executar tudo"** no menu "Ambiente de execução".
 
-3.  Role para baixo e veja os logs de saída dos testes.
+3.  Role para baixo e veja os logs de saída dos testes, neste notebook já tem dois exemplos de uso, para testar outros métodos e usar outras imagens, basta conferir o tópico abaixo Exemplos de Uso.
 
 ---
 
-## 🛠️ Como Instalar e Rodar (Método Local)
+## Como Instalar e Rodar (Método Local)
 Se preferir executar o projeto em sua máquina local, siga os passos abaixo em seu terminal:
 
 1.  **Clone o Repositório:**
