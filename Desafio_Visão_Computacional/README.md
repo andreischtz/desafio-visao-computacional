@@ -153,7 +153,7 @@ Vale observar que, em ambientes com luz artificial ou sombras intensas, os valor
 
 ---
 
-## ⚠️ Solução de Problemas (Troubleshooting)
+## Solução de Problemas (Troubleshooting)
 
 **Erro no Linux (Codespaces/Docker): `ImportError: libGL.so.1: cannot open shared object file...`**
 
@@ -170,4 +170,4 @@ sudo apt-get update
 sudo apt-get install -y libgl1
 
 ```
-```
+
