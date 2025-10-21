@@ -13,16 +13,55 @@ O aplicativo permite ao usuário escolher o método, a cor alvo (verde ou azul) 
 
 ---
 
-## Como Instalar e Rodar
+## Como Rodar (Método Rápido - Recomendado)
+A maneira mais fácil de testar este projeto é diretamente no Google Colab, que cria um ambiente limpo e instala todas as dependências automaticamente.
 
-1.  **Crie um ambiente virtual** (recomendado) e ative-o.
+1.  **Clique no link abaixo** para abrir o notebook de teste:
 
-2.  **Instale as dependências** a partir do arquivo `requirements.txt`:
+    [![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andreischtz/desafio-visao-computacional/blob/main/Desafio_Visão_Computacional/Testar_Projeto_Aqui.ipynb)
+
+2.  Quando o notebook carregar, clique em **"Executar tudo"** no menu "Ambiente de execução".
+
+3.  Role para baixo e veja os logs de saída dos testes.
+
+---
+
+## 🛠️ Como Instalar e Rodar (Método Local)
+Se preferir executar o projeto em sua máquina local, siga os passos abaixo em seu terminal:
+
+1.  **Clone o Repositório:**
+    ```bash
+    git clone https://github.com/andreischtz/desafio-visao-computacional.git
+    ```
+
+2.  **Acesse a Pasta Correta do Projeto:**
+    Observe que os arquivos do projeto estão dentro de uma subpasta. Acesse-a:
+    ```bash
+    cd desafio-visao-computacional/Desafio_Visão_Computacional
+    ```
+
+3.  **Crie e Ative um Ambiente Virtual:**
+    ```bash
+    # Crie o ambiente (pode usar 'python' ou 'python3')
+    python -m venv venv
+    
+    # Ative o ambiente (Linux/Mac)
+    source venv/bin/activate
+    
+    # Ative o ambiente (Windows - PowerShell)
+    .\venv\Scripts\Activate.ps1
+    
+    # Ative o ambiente (Windows - CMD)
+    .\venv\Scripts\activate.bat
+    ```
+
+4.  **Instale as Dependências:**
     ```bash
     pip install -r requirements.txt
     ```
 
-3.  **Execute o script** `segment.py` a partir do seu terminal. Os resultados serão salvos automaticamente na pasta `outputs/`.
+5.  **Pronto! Execute os Testes:**
+    Veja a seção "Exemplos de Uso" para os comandos.
 
 ### Exemplos de Uso
 
