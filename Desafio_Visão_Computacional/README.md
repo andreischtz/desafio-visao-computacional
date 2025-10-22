@@ -67,32 +67,32 @@ Se preferir executar o projeto em sua máquina local, siga os passos abaixo em s
 
 **Segmentação HSV (Verde)**
 ```bash
-python segment.py --input samples/planta.jpg --method hsv --target green
+!python segment.py --input samples/planta.jpg --method hsv --target green
 ````
 
 **Segmentação K-Means (Verde)**
 
 ```bash
-python segment.py --input samples/jardim.jpg --method kmeans --k 4 --target green
+!python segment.py --input samples/jardim.jpg --method kmeans --k 4 --target green
 ```
 
 **Segmentação HSV (Azul - Céu)**
 
 ```bash
-python segment.py --input samples/ceu.jpg --method hsv --target blue
+!python segment.py --input samples/ceu.jpg --method hsv --target blue
 ```
 
 **Segmentação HSV (Azul - Ajuste Manual)**
 Este é um exemplo de ajuste fino dos limiares para isolar a placa de trânsito, ignorando o céu.
 
 ```bash
-python segment.py --input samples/placa.png --method hsv --target blue --hmin 90 --hmax 130 --smin 100
+!python segment.py --input samples/placa.png --method hsv --target blue --hmin 90 --hmax 130 --smin 100
 ```
 
 **Segmentação K-Means (Azul - Placa)**
 
 ```bash
-python segment.py --input samples/placa.png --method kmeans --k 4 --target blue
+!python segment.py --input samples/placa.png --method kmeans --k 4 --target blue
 ```
 
 -----
