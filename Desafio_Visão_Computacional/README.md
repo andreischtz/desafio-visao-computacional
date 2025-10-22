@@ -1,7 +1,7 @@
 # Teste Técnico – Visão Computacional + IA
 
 ## Objetivo 
-Este projeto é um mini-aplicativo de linha de comando (CLI) construído em Python, capaz de carregar uma imagem e aplicar dois algoritmos distintos de segmentação de imagem: um baseado em limiares de cor no espaço **HSV** e outro baseado em agrupamento **K-Means**.
+Este projeto é um pequeno aplicativo de linha de comando desenvolvido em Python. Ele permite carregar uma imagem e aplicar dois métodos diferentes de segmentação: um baseado na cor (usando o espaço HSV) e outro em agrupamento de pixels com o algoritmo K-Means.
 
 O aplicativo permite ao usuário escolher o método, a cor alvo (verde ou azul) e ajustar parâmetros específicos via flags de comando.
 
@@ -107,7 +107,7 @@ Este método é uma abordagem de limiarização (thresholding). A imagem origina
   * **S (Saturação):** A "pureza" da cor. 0 é cinza, 255 é a cor mais vibrante.
   * **V (Valor):** O "brilho" da cor. 0 é preto, 255 é o mais brilhante.
 
-A vantagem do HSV é que a **Cor (H)** é separada da **Iluminação (V)**. O script então cria uma máscara binária selecionando *apenas* os pixels que estão dentro do intervalo de H, S e V especificado para "verde" ou "azul".
+A vantagem do HSV é que a **Cor (H)** é separada da **Iluminação (V)**. A partir desses limites, o programa gera uma máscara que realça apenas os pixels que se encaixam nas faixas definidas de matiz, saturação e brilho correspondentes às cores verde ou azul.
 
 ### B) Segmentação por Agrupamento (K-Means)
 
@@ -136,7 +136,7 @@ Durante os testes, notou-se que:
 - A **Saturação (S)** foi mantida entre 50 e 255 para excluir tons acinzentados ou muito claros.  
 - O **Value (V)** foi limitado a partir de 50 para evitar regiões escuras sem informação de cor.
 
-Esses valores foram escolhidos visando **um equilíbrio entre precisão e generalização**, permitindo detectar tons naturais de vegetação (verde) e céu (azul) mesmo com pequenas variações de iluminação.
+Esses valores foram definidos buscando um equilíbrio entre precisão e flexibilidade, de modo a identificar tons naturais de vegetação (verde) e céu (azul), mesmo quando há variação de luz na cena.
 
 Vale observar que, em ambientes com luz artificial ou sombras intensas, os valores ideais podem variar. Por isso, o programa permite ajustar manualmente todos os limites (`--hmin`, `--hmax`, `--smin`, etc.) via linha de comando, garantindo flexibilidade e controle sobre o resultado.
 
@@ -152,6 +152,15 @@ Vale observar que, em ambientes com luz artificial ou sombras intensas, os valor
 <!-- end list -->
 
 ---
+
+## 🧩 Ambientes testados
+
+- ✅ **Google Colab** — execução completa e estável  
+- ⚠️ **GitHub Codespaces (Linux minimal)** — requer instalação de `libgl1`  
+- ⚠️ **Windows CMD** — pode apresentar falhas relacionadas ao OpenCV em algumas versões locais do Python
+
+---
+
 
 ## Solução de Problemas (Troubleshooting)
 
