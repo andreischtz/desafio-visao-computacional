@@ -155,9 +155,9 @@ Vale observar que, em ambientes com luz artificial ou sombras intensas, os valor
 
 ## 🧩 Ambientes testados
 
-- ✅ **Google Colab** — execução completa e estável  
-- ⚠️ **GitHub Codespaces (Linux minimal)** — requer instalação de `libgl1`  
-- ⚠️ **Windows CMD** — pode apresentar falhas relacionadas ao OpenCV em algumas versões locais do Python
+- **Google Colab** — execução completa e estável  
+- **GitHub Codespaces (Linux minimal)** — requer instalação de `libgl1`  
+- **Windows CMD** — pode apresentar falhas relacionadas ao OpenCV em algumas versões locais do Python
 
 ---
 
