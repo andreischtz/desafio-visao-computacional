@@ -153,7 +153,7 @@ Vale observar que, em ambientes com luz artificial ou sombras intensas, os valor
 
 ---
 
-## 🧩 Ambientes testados
+## Ambientes testados
 
 - **Google Colab** — execução completa e estável  
 - **GitHub Codespaces (Linux minimal)** — requer instalação de `libgl1`  
