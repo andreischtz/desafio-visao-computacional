@@ -1,10 +1,13 @@
-# Teste Técnico – Visão Computacional + IA
+# Segmentação de Imagens — Visão Computacional com HSV e K-Means
 
 ## Objetivo 
-Este projeto é um pequeno aplicativo de linha de comando desenvolvido em Python. Ele permite carregar uma imagem e aplicar dois métodos diferentes de segmentação: um baseado na cor (usando o espaço HSV) e outro em agrupamento de pixels com o algoritmo K-Means.
+Este projeto tem como propósito explorar e comparar duas abordagens clássicas de segmentação de imagens aplicadas a problemas de visão computacional:
 
-O aplicativo permite ao usuário escolher o método, a cor alvo (verde ou azul) e ajustar parâmetros específicos via flags de comando.
+- Segmentação por Cor (HSV) — baseada em limiares de matiz, saturação e brilho;
 
+- Segmentação por Agrupamento (K-Means) — método não supervisionado que classifica pixels com base em similaridade de cor.
+
+A proposta é oferecer uma implementação prática e didática, permitindo ao usuário escolher o método desejado, ajustar parâmetros e analisar as diferenças de desempenho e comportamento entre as duas técnicas.
 ---
 
 ## Requisitos
@@ -179,4 +182,31 @@ sudo apt-get update
 sudo apt-get install -y libgl1
 
 ```
+---
+
+## Aprendizados Pessoais  
+
+Este projeto foi originalmente desenvolvido como parte de um **desafio técnico de Iniciação Científica** na área de Visão Computacional e Inteligência Artificial.  
+
+Durante o desenvolvimento, pude consolidar e ampliar meus conhecimentos sobre:  
+
+- Processamento e segmentação de imagens utilizando **OpenCV**;  
+- Diferenças práticas entre **segmentação por limiarização (HSV)** e **aprendizado não supervisionado (K-Means)**;  
+- Efeitos da **iluminação e saturação** sobre a precisão da detecção de cores;  
+- Boas práticas de **organização de código**, documentação e versionamento em **GitHub**;  
+- Testes e compatibilidade entre diferentes ambientes (Google Colab, Linux e Windows).  
+
+Além dos aspectos técnicos, este projeto reforçou minha motivação em seguir pesquisando e aplicando técnicas de visão computacional voltadas à automação inteligente e à integração entre IA e sistemas de controle.
+
+---
+
+## Autor  
+
+**Andrei Schwartz**  
+Estudante de Engenharia de Controle e Automação – Universidade Federal de Pelotas (UFPel)  
+Brasil  
+
+[GitHub](https://github.com/andreischtz) • [LinkedIn](https://www.linkedin.com/in/andreischtz/)  
+
+> Este projeto integra meu portfólio técnico e representa meu interesse em desenvolver soluções que unam **visão computacional, automação e inteligência artificial**, com foco em aplicações inovadoras e tecnológicas.
 
