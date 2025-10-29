@@ -1,4 +1,4 @@
-# Segmentação de Imagens — Visão Computacional com HSV e K-Means
+# Visão Computacional com HSV e K-Means
 
 ## Objetivo 
 Este projeto tem como propósito explorar e comparar duas abordagens clássicas de segmentação de imagens aplicadas a problemas de visão computacional:
@@ -8,6 +8,7 @@ Este projeto tem como propósito explorar e comparar duas abordagens clássicas 
 - Segmentação por Agrupamento (K-Means) — método não supervisionado que classifica pixels com base em similaridade de cor.
 
 A proposta é oferecer uma implementação prática e didática, permitindo ao usuário escolher o método desejado, ajustar parâmetros e analisar as diferenças de desempenho e comportamento entre as duas técnicas.
+
 ---
 
 ## Requisitos
